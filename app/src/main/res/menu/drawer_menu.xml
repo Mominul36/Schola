@@ -1,0 +1,50 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_faculty_members"
+        android:title="Faculty Members"
+        android:icon="@drawable/ic_faculty_members"/>
+
+
+
+
+    <item
+        android:id="@+id/nav_academic_calendar"
+        android:title="Academic Calendar"
+        android:icon="@drawable/ic_academic_calendar"/>
+
+    <item
+        android:id="@+id/nav_notice"
+        android:title="Notice"
+        android:icon="@drawable/notice"/>
+
+
+    <item
+        android:title=""
+        />
+    <item
+        android:title=""
+        />
+
+
+    <item
+        android:title=""
+        />
+
+    <item
+        android:title=""
+        />
+
+    <item
+        android:title=""
+        />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_settings"/>
+
+    <item
+        android:id="@+id/nav_logout"
+        android:title="Log Out"
+        android:icon="@drawable/ic_logout"/>
+</menu>

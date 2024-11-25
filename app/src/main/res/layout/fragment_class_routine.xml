@@ -1,0 +1,1148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.ClassRoutineFragment"
+    android:background="@color/bg_color">
+
+
+
+    <TextView
+
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:text="Routine"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="25dp"
+        />
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:text="Select Date"
+        android:background="@drawable/spinner_background2"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Off Day"
+        android:textSize="35sp"
+        android:layout_centerInParent="true"
+        android:textColor="#DE0909"
+        android:textStyle="bold"
+        />
+
+
+
+    <ScrollView
+        android:id="@+id/routine_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/date"
+        android:layout_margin="16dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/corner_radious"
+
+            android:padding="8dp">
+
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="08:00 AM\n08:50 AM"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="5dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/radio"
+                        android:layout_gravity="center"
+                        />
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="110dp"
+                        android:background="#707073"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        />
+                </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="3"
+                     android:background="@drawable/routine_card_corner"
+                     android:paddingHorizontal="20dp"
+                     android:paddingVertical="10dp"
+                     android:orientation="vertical"
+                     >
+                     <TextView
+                         android:id="@+id/courseCode1"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="CSE 3101"
+                         android:textColor="@color/black"
+                         android:textStyle="bold"
+                         android:textSize="14sp"
+                         />
+                     <TextView
+                         android:id="@+id/room1"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="Room: 4002"
+                         android:textColor="@color/black"
+                         android:textStyle="bold"
+                         android:textSize="14sp"
+                         android:layout_marginTop="2dp"
+                         />
+
+
+
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="5dp"
+                         >
+
+
+                         <androidx.cardview.widget.CardView
+                             android:layout_width="25dp"
+                             android:layout_height="25dp"
+                             app:cardCornerRadius="15dp"
+                             app:cardElevation="0dp"
+                             >
+
+
+                             <ImageView
+                                 android:id="@+id/teacherPic1"
+                                 android:layout_width="25dp"
+                                 android:layout_height="25dp"
+                                 android:src="@drawable/profile"
+
+                                 />
+
+
+                         </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+                         <TextView
+                             android:id="@+id/teacherName1"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="CSE 3101"
+                             android:textColor="@color/black"
+                             android:textStyle="bold"
+                             android:textSize="14sp"
+                             android:layout_gravity="center"
+                             android:layout_marginLeft="10dp"
+                             />
+
+                     </LinearLayout>
+
+
+
+
+
+
+                 </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="09:00 AM\n09:50 AM"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="5dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/radio"
+                        android:layout_gravity="center"
+                        />
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="110dp"
+                        android:background="#707073"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/routine_card_corner"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/courseCode2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CSE 3101"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        />
+                    <TextView
+                        android:id="@+id/room2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Room: 4002"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_marginTop="2dp"
+                        />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            app:cardCornerRadius="15dp"
+                            app:cardElevation="0dp"
+                            >
+                        <ImageView
+                            android:id="@+id/teacherPic2"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/profile"
+
+                            />
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:id="@+id/teacherName2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CSE 3101"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="10:00 AM\n10:50 AM"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="5dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/radio"
+                        android:layout_gravity="center"
+                        />
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="110dp"
+                        android:background="#707073"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/routine_card_corner"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/courseCode3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CSE 3101"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        />
+                    <TextView
+                        android:id="@+id/room3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Room: 4002"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_marginTop="2dp"
+                        />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            app:cardCornerRadius="15dp"
+                            app:cardElevation="0dp"
+                            >
+                        <ImageView
+                            android:id="@+id/teacherPic3"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/profile"
+
+                            />
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:id="@+id/teacherName3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CSE 3101"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="11:30 PM\n12:20 PM"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="5dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/radio"
+                        android:layout_gravity="center"
+                        />
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="110dp"
+                        android:background="#707073"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/routine_card_corner"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/courseCode4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CSE 3101"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        />
+                    <TextView
+                        android:id="@+id/room4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Room: 4002"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_marginTop="2dp"
+                        />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        >
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            app:cardCornerRadius="15dp"
+                            app:cardElevation="0dp"
+                            >
+                        <ImageView
+                            android:id="@+id/teacherPic4"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/profile"
+
+                            />
+                    </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:id="@+id/teacherName4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CSE 3101"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="12:30 PM\n01:20 PM"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="5dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/radio"
+                        android:layout_gravity="center"
+                        />
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="110dp"
+                        android:background="#707073"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/routine_card_corner"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/courseCode5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CSE 3101"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        />
+                    <TextView
+                        android:id="@+id/room5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Room: 4002"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_marginTop="2dp"
+                        />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        >
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            app:cardCornerRadius="15dp"
+                            app:cardElevation="0dp"
+                            >
+                        <ImageView
+                            android:id="@+id/teacherPic5"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/profile"
+
+                            />
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:id="@+id/teacherName5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CSE 3101"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="01:30 PM\n02:20 PM"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="5dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/radio"
+                        android:layout_gravity="center"
+                        />
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="110dp"
+                        android:background="#707073"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/routine_card_corner"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/courseCode6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CSE 3101"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        />
+                    <TextView
+                        android:id="@+id/room6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Room: 4002"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_marginTop="2dp"
+                        />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            app:cardCornerRadius="15dp"
+                            app:cardElevation="0dp"
+                            >
+                        <ImageView
+                            android:id="@+id/teacherPic6"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/profile"
+
+                            />
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:id="@+id/teacherName6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CSE 3101"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="08:00 AM\n08:50 AM"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="5dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/radio"
+                        android:layout_gravity="center"
+                        />
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="110dp"
+                        android:background="#707073"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/routine_card_corner"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/courseCode7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CSE 3101"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        />
+                    <TextView
+                        android:id="@+id/room7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Room: 4002"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_marginTop="2dp"
+                        />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            app:cardCornerRadius="15dp"
+                            app:cardElevation="0dp"
+                            >
+                        <ImageView
+                            android:id="@+id/teacherPic7"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/profile"
+
+                            />
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:id="@+id/teacherName7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CSE 3101"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="02:30 PM\n03:20 PM"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="5dp">
+
+
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/radio"
+                        android:layout_gravity="center"
+                        />
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="110dp"
+                        android:background="#707073"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/routine_card_corner"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/courseCode8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CSE 3101"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        />
+                    <TextView
+                        android:id="@+id/room8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Room: 4002"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_marginTop="2dp"
+                        />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            app:cardCornerRadius="15dp"
+                            app:cardElevation="0dp"
+                            >
+                        <ImageView
+                            android:id="@+id/teacherPic8"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/profile"
+
+                            />
+                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:id="@+id/teacherName8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CSE 3101"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/l9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="03:30 PM\n04:20 PM"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="5dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/radio"
+                        android:layout_gravity="center"
+                        />
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="110dp"
+                        android:background="#707073"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@drawable/routine_card_corner"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:id="@+id/courseCode9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CSE 3101"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        />
+                    <TextView
+                        android:id="@+id/room9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Room: 4002"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_marginTop="2dp"
+                        />
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            app:cardCornerRadius="15dp"
+                            app:cardElevation="0dp"
+                            >
+                        <ImageView
+                            android:id="@+id/teacherPic9"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/profile"
+
+                            />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/teacherName9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CSE 3101"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                    </LinearLayout>
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

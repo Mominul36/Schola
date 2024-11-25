@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cgpaActivity"
+    android:orientation="vertical"
+    android:background="@color/bg_color">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="?attr/colorPrimary">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back_arrow" />
+    </androidx.appcompat.widget.Toolbar>
+
+<!--    &lt;!&ndash; Scrollable Content &ndash;&gt;-->
+<!--    <ScrollView-->
+<!--        android:id="@+id/scroll_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@id/toolbar">-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/content_layout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:padding="20dp">-->
+
+<!--            &lt;!&ndash; Subjects Layout &ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:id="@+id/subject_1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:background="@drawable/textview_background">-->
+
+<!--                <EditText-->
+<!--                    android:id="@+id/subject_name_1"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="45dp"-->
+<!--                    android:hint="Enter Subject Name"-->
+<!--                    android:paddingLeft="15dp"-->
+<!--                    android:background="@color/form_edit_bg_color"-->
+<!--                    android:layout_margin="10dp" />-->
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="2dp"-->
+<!--                    android:background="@color/button_color" />-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:weightSum="2">-->
+
+<!--                    <Spinner-->
+<!--                        android:id="@+id/grade_spinner_1"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:padding="10dp" />-->
+
+<!--                    <View-->
+<!--                        android:layout_width="2dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:background="@color/button_color" />-->
+
+<!--                    <Spinner-->
+<!--                        android:id="@+id/credit_spinner_1"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:padding="10dp" />-->
+<!--                </LinearLayout>-->
+<!--            </LinearLayout>-->
+
+<!--            &lt;!&ndash; Repeat for other subjects &ndash;&gt;-->
+<!--            <include-->
+<!--                layout="@layout/subject_layout"-->
+<!--                android:id="@+id/subject_2"-->
+<!--                tools:ignore="DuplicateIds" />-->
+
+<!--            <include-->
+<!--                layout="@layout/subject_layout"-->
+<!--                android:id="@+id/subject_3"-->
+<!--                tools:ignore="DuplicateIds" />-->
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
+</RelativeLayout>

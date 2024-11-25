@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.HomeFragment"
+    android:orientation="vertical"
+    >
+
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="300dp"
+        android:layout_height="170dp"
+        android:src="@drawable/notice_pic"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="20dp"
+        />
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+
+
+            >
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="3">
+
+                <!-- Subjects -->
+                <LinearLayout
+                    android:id="@+id/subject"
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/corner_radious"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/btn_subjects"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/subjects"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Subjects" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Subjects"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+
+                <!-- Class Test -->
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/corner_radious">
+
+                    <ImageButton
+                        android:id="@+id/btn_class_test"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/class_test"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Class Test" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Class Test"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+
+                <!-- Assignment -->
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/corner_radious">
+
+                    <ImageButton
+                        android:id="@+id/assignment"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/assignment"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Assignment" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Assignment"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+
+                <!-- Home Work -->
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/corner_radious">
+
+                    <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/home_work"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Home Work" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Home Work"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+
+                <!-- Lab Exam -->
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/corner_radious">
+
+                    <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/lab_exam"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Lab Exam" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lab Exam"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+
+                <!-- Lab Report -->
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/corner_radious">
+
+                    <ImageButton
+                        android:id="@+id/lr"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/lab_report"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Lab Report" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lab Report"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+
+                <!-- Mark Sheet -->
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/corner_radious">
+
+                    <ImageButton
+                        android:id="@+id/attendence"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/mark_sheet"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Mark Sheet" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Attendence"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+
+                <!-- Question Bank -->
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/corner_radious">
+
+                    <ImageButton
+                        android:id="@+id/question"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/qustion_bank"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Question Bank" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Question Bank"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+
+                <!-- Notice -->
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="120dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/corner_radious">
+
+                    <ImageButton
+                        android:id="@+id/notice"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/notice"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="Notice" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Notice"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="8dp" />
+                </LinearLayout>
+
+
+            </GridLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

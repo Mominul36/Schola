@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.StudyMaterialFragment">
+
+
+    <TextView
+        android:id="@+id/go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Browser"
+        android:textColor="#041EA6"
+        android:textStyle="bold|italic"
+        android:layout_alignParentRight="true"
+        android:textSize="16sp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginRight="5dp"
+        />
+
+
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/go"
+        android:background="@color/bg_color"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="10dp"
+    >
+
+
+    <TextView
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How are You? adsfadf asdf asdfasdf asdfasdf asdfasdf "
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:background="@drawable/message_background"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        android:maxWidth="280dp"
+
+        android:layout_marginLeft="10dp"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How are You? adsfadf asdf asdfasdf asdfasdf asdfasdf "
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:background="@drawable/message_background2"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp"
+        android:maxWidth="280dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        />
+
+
+</RelativeLayout>

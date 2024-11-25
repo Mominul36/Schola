@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="bg_color">#E9F3FA</color>
+    <color name="button_color">#2F7BA8</color>
+    <color name="base_color">#2F5972</color>
+    <color name="form_edit_bg_color">#DFE6EF</color>
+
+
+
+    <color name="green">#10ac84</color>
+
+    <color name="yellow">#feca57</color>
+    <color name="red">#ee5253</color>
+
+
+
+
+
+    #10ac84
+
+</resources>
